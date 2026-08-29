@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="./icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="titlebar">
+        <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        </div>
+        <nav class="tabs" id="tabs">
+            <a class="tab active" data-target="#hero"><span class="dotfile"></span>hero.js</a>
+            <a class="tab" data-target="#about"><span class="dotfile"></span>about.js</a>
+            <a class="tab" data-target="#skills"><span class="dotfile"></span>skills.json</a>
+            <a class="tab" data-target="#projects"><span class="dotfile"></span>projects.js</a>
+            <a class="tab" data-target="#contact"><span class="dotfile"></span>contact.js</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle">tabs ▾</button>
+    </div>
+
+    <main>
+
+      
+        <section class="hero" id="hero">
+            <div class="gutter">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="wrap">
+                <div class="eyebrow"><span class="kw">import</span>&nbsp;{ developer } <span class="kw">from</span>
+                    "./ahmed-raza.js"</div>
+                <div class="code-block">
+                    <span class="kw">const</span> <span class="fn">developer</span> <span class="punc">=</span> <span
+                        class="punc">{</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="code-block">
+                        &nbsp;&nbsp;<span class="prop">name</span><span class="punc">:</span> <span class="str">"Ahmed
+                            Raza"</span><span class="punc">,</span><br>
+                        &nbsp;&nbsp;<span class="prop">role</span><span class="punc">:</span> <span class="str">"<span
+                                id="typedRole"></span>"</span><span class="cursor-blink"></span>
+                    </span>
+                </h1>
+                <div class="code-block" style="margin-bottom:26px;">&#125;</div>
+                <p class="hero-sub">I build fast, clean interfaces — from hand-written HTML/CSS/JS to React and Next.js
+                    apps. Currently open to new opportunities and freelance work.</p>
+                <div class="btn-row">
+                    <a href="#projects" class="btn primary">view projects()</a>
+                    <a href="#contact" class="btn ghost">say hello →</a>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section id="about">
+            <div class="gutter"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="wrap">
+                <div class="eyebrow"><span class="kw">function</span> about() {'{'}</div>
+                <h2 style="font-size:28px;margin-bottom:20px;">About me</h2>
+                <div class="about-body">
+                    <p>I'm <span class="hl">Ahmed Raza</span>, a developer who enjoys turning ideas into interfaces that
+                        feel fast and intuitive. My work spans plain HTML/CSS/JS builds to component-driven apps in
+                        React and Next.js.</p>
+                    <p>I care about clean code, sensible structure, and details most people won't notice but will feel —
+                        smooth interactions, sensible spacing, accessible markup.</p>
+                </div>
+                <div class="stat-row">
+                    <div class="stat"><b>3+</b><span>Years learning &amp; building</span></div>
+                    <div class="stat"><b>7</b><span>Core technologies</span></div>
+                    <div class="stat"><b>100%</b><span>Focused on clean code</span></div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="skills">
+            <div class="gutter">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="wrap">
+                <div class="eyebrow"><span class="kw">cat</span> package.json</div>
+                <h2 style="font-size:28px;margin-bottom:20px;">Skills</h2>
+                <div class="json-block">
+                    <span class="p">{</span><br>
+                    &nbsp;&nbsp;<span class="k">"name"</span><span class="p">:</span> <span
+                        class="v">"ahmed-raza-portfolio"</span><span class="p">,</span><br>
+                    &nbsp;&nbsp;<span class="k">"dependencies"</span><span class="p">: {</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="k">"html"</span><span class="p">:</span> <span
+                        class="v">"^5.0.0"</span><span class="p">,</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="k">"css"</span><span class="p">:</span> <span
+                        class="v">"^3.0.0"</span><span class="p">,</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="k">"javascript"</span><span class="p">:</span> <span
+                        class="v">"^ES2023"</span><span class="p">,</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="k">"bootstrap"</span><span class="p">:</span> <span
+                        class="v">"^5.3.0"</span><span class="p">,</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="k">"tailwindcss"</span><span class="p">:</span> <span
+                        class="v">"^3.4.0"</span><span class="p">,</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="k">"react"</span><span class="p">:</span> <span
+                        class="v">"^18.2.0"</span><span class="p">,</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="k">"next"</span><span class="p">:</span> <span
+                        class="v">"^14.0.0"</span><br>
+                    &nbsp;&nbsp;<span class="p">}</span><br>
+                    <span class="p">}</span>
+                </div>
+
+                <div class="skill-grid" id="skillGrid">
+                    <div class="skill-card" data-level="90"><span class="name">HTML</span>
+                        <div class="bar"><i></i></div><span class="lvl">90%</span>
+                    </div>
+                    <div class="skill-card" data-level="88"><span class="name">CSS</span>
+                        <div class="bar"><i></i></div><span class="lvl">88%</span>
+                    </div>
+                    <div class="skill-card" data-level="82"><span class="name">JavaScript</span>
+                        <div class="bar"><i></i></div><span class="lvl">82%</span>
+                    </div>
+                    <div class="skill-card" data-level="80"><span class="name">Bootstrap</span>
+                        <div class="bar"><i></i></div><span class="lvl">80%</span>
+                    </div>
+                    <div class="skill-card" data-level="85"><span class="name">Tailwind CSS</span>
+                        <div class="bar"><i></i></div><span class="lvl">85%</span>
+                    </div>
+                    <div class="skill-card" data-level="75"><span class="name">React</span>
+                        <div class="bar"><i></i></div><span class="lvl">75%</span>
+                    </div>
+                    <div class="skill-card" data-level="70"><span class="name">Next.js</span>
+                        <div class="bar"><i></i></div><span class="lvl">70%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="projects">
+            <div class="gutter">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="wrap">
+                <div class="eyebrow"><span class="kw">export</span> <span class="kw">const</span> projects <span
+                        class="punc">=</span> [</div>
+                <h2 style="font-size:28px;margin-bottom:24px;">Projects</h2>
+
+                <div class="project">
+                    <div class="project-head">
+                        <h3>Project One — Landing Page</h3>
+                        <span class="project-tag">featured</span>
+                    </div>
+                    <p class="desc">A responsive landing page built with semantic HTML, custom CSS animations, and
+                        vanilla JS interactions. Replace this with your real project description.</p>
+                    <div class="stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    <div class="project-links"><a href="#">Live demo →</a><a href="#">Source code →</a></div>
+                </div>
+
+                <div class="project">
+                    <div class="project-head">
+                        <h3>Project Two — Dashboard UI</h3>
+                        <span class="project-tag">react</span>
+                    </div>
+                    <p class="desc">A component-based admin dashboard built in React with Tailwind CSS for styling and
+                        reusable UI components. Replace this with your real project description.</p>
+                    <div class="stack"><span>React</span><span>Tailwind</span><span>REST API</span></div>
+                    <div class="project-links"><a href="#">Live demo →</a><a href="#">Source code →</a></div>
+                </div>
+
+                <div class="project">
+                    <div class="project-head">
+                        <h3>Project Three — Full-Stack App</h3>
+                        <span class="project-tag">next.js</span>
+                    </div>
+                    <p class="desc">A server-rendered web app built with Next.js, covering routing, API endpoints, and
+                        dynamic pages. Replace this with your real project description.</p>
+                    <div class="stack"><span>Next.js</span><span>React</span><span>Node.js</span></div>
+                    <div class="project-links"><a href="#">Live demo →</a><a href="#">Source code →</a></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact" style="border-bottom:none;">
+            <div class="gutter"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="wrap">
+                <div class="eyebrow"><span class="kw">node</span> contact.js</div>
+                <h2 style="font-size:28px;margin-bottom:24px;">Let's talk</h2>
+
+                <div class="terminal">
+                    <div class="terminal-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="line"><span class="prompt">$</span> <b>whoami</b></div>
+                        <div class="line">Ahmed Raza — Front-End Developer</div>
+
+                        <form class="contact-form" id="contactForm">
+                            <div class="field-row"><span class="prompt">$</span><input type="text" id="nameInput"
+                                    placeholder="your-name" required></div>
+                            <div class="field-row"><span class="prompt">$</span><input type="email" id="emailInput"
+                                    placeholder="your-email@example.com" required></div>
+                            <div class="field-row" style="align-items:flex-start;"><span class="prompt"
+                                    style="padding-top:6px;">$</span><textarea id="msgInput"
+                                    placeholder="your-message..." required></textarea></div>
+                            <button type="submit" class="submit-btn">send --message</button>
+                            <div class="form-msg" id="formMsg">✓ Message queued. Ahmed will get back to you soon.</div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="socials">
+                    <a href="mailto:aimen69khan@gmail.com">email</a>
+                    <a href="#">github</a>
+                    <a href="#">linkedin</a>
+                    <a href="#">twitter</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>&lt;/&gt; built by Ahmed Raza — © <span id="year"></span></footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
